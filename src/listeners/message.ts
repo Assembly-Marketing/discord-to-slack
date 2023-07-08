@@ -8,6 +8,10 @@ export default (client: Client): void => {
       return;
     }
 
+    if (message.author.id === process.env.USER_ID_TO_IGNORE) {
+      return;
+    }
+
     // This UserID we know always shares embed so we'll forward the embed to Slack
     if (message.author.id === process.env.USER_ID_TO_TRACK) {
       const { content, embeds } = message;
