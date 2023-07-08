@@ -46,3 +46,7 @@ Take the channel ID and put it in `.env` as `DISCORD_CHANNEL_ID`
 ### User ID to Track
 
 This was useful for me since I only wanted to really filter on a specific user (really a webhook's posts) so get a user ID you want to track and put it in `USER_ID_TO_TRACK`
+
+## Deploying
+
+I recommend running this Discord bot on [Render](https://render.com/)
